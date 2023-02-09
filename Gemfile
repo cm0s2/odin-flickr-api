@@ -70,3 +70,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# Use Flickr to access the Flickr API [https://rubygems.org/gems/flickr]
+gem 'flickr', '~> 2.1'
+
+# Simple, Heroku-friendly Rails app configuration using ENV and a single YAML file [https://rubygems.org/gems/figaro]
+gem 'figaro', '~> 1.2'
