@@ -1,0 +1,14 @@
+<h1>Search Flickr</h1>
+
+
+<%= form_with url: root_path, method: :get do |f| %>
+  <%= f.text_field :user_id, placeholder: "User ID", value: params[:user_id] %>
+  <%= f.submit "Search", name: nil %>
+<% end %>
+
+<% if @image_urls %>
+<h2>Result</h2>
+  <% @image_urls.each do |url| %>
+    <div><img src="<%= url %>" alt=""></div>
+  <% end %>
+<% end %>
